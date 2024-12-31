@@ -384,4 +384,69 @@ first_file.txt
 aryan@Aryans-MacBook-Air github_tutorial % git stash clear
 aryan@Aryans-MacBook-Air github_tutorial % ls
 first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % ls
+Terminal Saved Output.txt	first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Terminal Saved Output.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+aryan@Aryans-MacBook-Air github_tutorial % git add .
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Terminal Saved Output.txt
+
+aryan@Aryans-MacBook-Air github_tutorial % git commit -m "Saving Git Tutorial work done on terminal for reference"
+[main 763a635] Saving Git Tutorial work done on terminal for reference
+ Committer: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 387 insertions(+)
+ create mode 100644 Terminal Saved Output.txt
+aryan@Aryans-MacBook-Air github_tutorial % ls
+Terminal Saved Output.txt	first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+nothing to commit, working tree clean
+aryan@Aryans-MacBook-Air github_tutorial % git remote add origin https://github.com/Saint-Potato/Git-Tutorial.git
+aryan@Aryans-MacBook-Air github_tutorial % git remote -v
+origin	https://github.com/Saint-Potato/Git-Tutorial.git (fetch)
+origin	https://github.com/Saint-Potato/Git-Tutorial.git (push)
+aryan@Aryans-MacBook-Air github_tutorial % git push origin master 
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Saint-Potato/Git-Tutorial.git'
+aryan@Aryans-MacBook-Air github_tutorial % git push origin main   
+Username for 'https://github.com': Saint-Potato
+Password for 'https://Saint-Potato@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Saint-Potato/Git-Tutorial.git/'
+aryan@Aryans-MacBook-Air github_tutorial % git push origin main
+Username for 'https://github.com': Saint-Potato
+Password for 'https://Saint-Potato@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+aryan@Aryans-MacBook-Air github_tutorial % git push origin main                                                                                           
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 3.67 KiB | 3.67 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Saint-Potato/Git-Tutorial
+ * [new branch]      main -> main
 aryan@Aryans-MacBook-Air github_tutorial % 
