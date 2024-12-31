@@ -1,0 +1,387 @@
+Last login: Sun Dec 29 19:56:07 on ttys000
+aryan@Aryans-MacBook-Air ~ % brew install git
+==> Auto-updating Homebrew...
+Adjust how often this is run with HOMEBREW_AUTO_UPDATE_SECS or disable with
+HOMEBREW_NO_AUTO_UPDATE. Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Homebrew collects anonymous analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics have been recorded yet (nor will be during this `brew` run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> New Formulae
+cargo-flamegraph           monocle                    showcert
+go-parquet-tools           pinact                     swc
+lol-html                   ratify                     wcstools
+==> New Casks
+ghostty@tip
+
+==> Downloading https://ghcr.io/v2/homebrew/core/git/manifests/2.47.1
+######################################################################### 100.0%
+==> Fetching dependencies for git: libunistring, gettext and pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.3
+######################################################################### 100.0%
+==> Fetching libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:3cd26
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.23
+######################################################################### 100.0%
+==> Fetching gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/blobs/sha256:920c38bf7e
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.44
+######################################################################### 100.0%
+==> Fetching pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:c3f9e7a70ebc
+######################################################################### 100.0%
+==> Fetching git
+==> Downloading https://ghcr.io/v2/homebrew/core/git/blobs/sha256:c5c0887f9971a6
+######################################################################### 100.0%
+==> Installing dependencies for git: libunistring, gettext and pcre2
+==> Installing git dependency: libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.3
+Already downloaded: /Users/aryan/Library/Caches/Homebrew/downloads/a570da63bc1839c7e217f203abd54d4d873ebd6b99f6e88994d0e79e2ebe987c--libunistring-1.3.bottle_manifest.json
+==> Pouring libunistring--1.3.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libunistring/1.3: 59 files, 5.4MB
+==> Installing git dependency: gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.23
+Already downloaded: /Users/aryan/Library/Caches/Homebrew/downloads/877a628115309630ae1102dcba7021c03cfffcb1b3dc923224cfae218eba1929--gettext-0.23.bottle_manifest.json
+==> Pouring gettext--0.23.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gettext/0.23: 2,052 files, 22.4MB
+==> Installing git dependency: pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.44
+Already downloaded: /Users/aryan/Library/Caches/Homebrew/downloads/22ed791461c5bf400adde8c3b432c1230866aa1db3c5cb81e06a6ff21cac96ee--pcre2-10.44.bottle_manifest.json
+==> Pouring pcre2--10.44.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pcre2/10.44: 237 files, 6.3MB
+==> Installing git
+==> Pouring git--2.47.1.arm64_sequoia.bottle.tar.gz
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Summary
+🍺  /opt/homebrew/Cellar/git/2.47.1: 1,685 files, 54.4MB
+==> Running `brew cleanup git`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+aryan@Aryans-MacBook-Air ~ % cd Desktop
+aryan@Aryans-MacBook-Air Desktop % cd DS
+aryan@Aryans-MacBook-Air DS % mkdir github_tutorial
+aryan@Aryans-MacBook-Air DS % ls
+Hello.class		haloumi			output.txt
+Hello.java		haloumi.cpp		outputf.in
+IntervalScheduling.cpp	hello.py		prog1
+cover_in _water		input.txt		prog1.cpp
+cover_in _water.cpp	inputf.in		template
+game_with_integers	line_trip		template.cpp
+game_with_integers.cpp	line_trip.cpp		test
+github_tutorial		output			test.cpp
+aryan@Aryans-MacBook-Air DS % cd github_tutorial
+aryan@Aryans-MacBook-Air github_tutorial % ls
+aryan@Aryans-MacBook-Air github_tutorial % ls -a
+.	..
+aryan@Aryans-MacBook-Air github_tutorial % git init
+Initialized empty Git repository in /Users/aryan/Desktop/DS/github_tutorial/.git/
+aryan@Aryans-MacBook-Air github_tutorial % ls
+aryan@Aryans-MacBook-Air github_tutorial % ls -a
+.	..	.git
+aryan@Aryans-MacBook-Air github_tutorial % ls .git
+HEAD		description	info		refs
+config		hooks		objects
+aryan@Aryans-MacBook-Air github_tutorial % touch first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	first_file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+aryan@Aryans-MacBook-Air github_tutorial % git add .
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   first_file.txt
+
+aryan@Aryans-MacBook-Air github_tutorial % git commit -m "adding first_file.txt"
+[main (root-commit) 5d92d9c] adding first_file.txt
+ Committer: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+nothing to commit, working tree clean
+aryan@Aryans-MacBook-Air github_tutorial % nano first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % nano first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   first_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aryan@Aryans-MacBook-Air github_tutorial % git add .
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   first_file.txt
+
+aryan@Aryans-MacBook-Air github_tutorial % git restore --staged names.txt
+error: pathspec 'names.txt' did not match any file(s) known to git
+aryan@Aryans-MacBook-Air github_tutorial % git restore --staged first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   first_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aryan@Aryans-MacBook-Air github_tutorial % git commit -a
+[main 782516b] adding first edit to first_file.txt
+ Committer: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+nothing to commit, working tree clean
+aryan@Aryans-MacBook-Air github_tutorial % git log
+commit 782516b9843533afd21b21bd9f90267bb8222205 (HEAD -> main)
+Author: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Date:   Tue Dec 31 06:49:29 2024 +0530
+
+    adding first edit to first_file.txt
+
+commit 5d92d9cef1054a60a76da19ffee4053116267d95
+Author: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Date:   Tue Dec 31 06:41:09 2024 +0530
+
+    adding first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % rm -rf first_file.xt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+nothing to commit, working tree clean
+aryan@Aryans-MacBook-Air github_tutorial % rm -rf first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    first_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aryan@Aryans-MacBook-Air github_tutorial % git add .
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    first_file.txt
+
+aryan@Aryans-MacBook-Air github_tutorial % git commit -m "removing first_file.txt"
+[main 138b0d4] removing first_file.txt
+ Committer: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 deletions(-)
+ delete mode 100644 first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git log
+commit 138b0d412f4b6238c778e01e343065e869d040f2 (HEAD -> main)
+Author: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Date:   Tue Dec 31 06:54:55 2024 +0530
+
+    removing first_file.txt
+
+commit 782516b9843533afd21b21bd9f90267bb8222205
+Author: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Date:   Tue Dec 31 06:49:29 2024 +0530
+
+    adding first edit to first_file.txt
+
+commit 5d92d9cef1054a60a76da19ffee4053116267d95
+Author: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Date:   Tue Dec 31 06:41:09 2024 +0530
+
+    adding first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git reset 782516b9843533afd21b21bd9f90267bb8222205
+Unstaged changes after reset:
+D	first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git log
+commit 782516b9843533afd21b21bd9f90267bb8222205 (HEAD -> main)
+Author: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Date:   Tue Dec 31 06:49:29 2024 +0530
+
+    adding first edit to first_file.txt
+
+commit 5d92d9cef1054a60a76da19ffee4053116267d95
+Author: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Date:   Tue Dec 31 06:41:09 2024 +0530
+
+    adding first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % ls
+aryan@Aryans-MacBook-Air github_tutorial % ls -a
+.	..	.git
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    first_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aryan@Aryans-MacBook-Air github_tutorial % git add .
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    first_file.txt
+
+aryan@Aryans-MacBook-Air github_tutorial % git restore --staged first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    first_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aryan@Aryans-MacBook-Air github_tutorial % git commit -m "log check"
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    first_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aryan@Aryans-MacBook-Air github_tutorial % git commit -m "log check"
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    first_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aryan@Aryans-MacBook-Air github_tutorial % git restore first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+nothing to commit, working tree clean
+aryan@Aryans-MacBook-Air github_tutorial % ls
+first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % nano first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % touch second_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % ls
+first_file.txt	second_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git add .
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   second_file.txt
+
+aryan@Aryans-MacBook-Air github_tutorial % nanon second_file.txt
+zsh: command not found: nanon
+aryan@Aryans-MacBook-Air github_tutorial % nano second_file.txt 
+aryan@Aryans-MacBook-Air github_tutorial % touch third_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % nano third_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git add .
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   second_file.txt
+	new file:   third_file.txt
+
+aryan@Aryans-MacBook-Air github_tutorial % git stash
+Saved working directory and index state WIP on main: 782516b adding first edit to first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % ls
+first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git log
+commit 782516b9843533afd21b21bd9f90267bb8222205 (HEAD -> main)
+Author: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Date:   Tue Dec 31 06:49:29 2024 +0530
+
+    adding first edit to first_file.txt
+
+commit 5d92d9cef1054a60a76da19ffee4053116267d95
+Author: Aryan Thapliyal <aryan@Aryans-MacBook-Air.local>
+Date:   Tue Dec 31 06:41:09 2024 +0530
+
+    adding first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git stash pop
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   second_file.txt
+	new file:   third_file.txt
+
+Dropped refs/stash@{0} (c72670f15d39ff35a18bb8f5535500ced9405748)
+aryan@Aryans-MacBook-Air github_tutorial % ls
+first_file.txt	second_file.txt	third_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   second_file.txt
+	new file:   third_file.txt
+
+aryan@Aryans-MacBook-Air github_tutorial % git stash
+Saved working directory and index state WIP on main: 782516b adding first edit to first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % ls
+first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % git stash clear
+aryan@Aryans-MacBook-Air github_tutorial % ls
+first_file.txt
+aryan@Aryans-MacBook-Air github_tutorial % 
