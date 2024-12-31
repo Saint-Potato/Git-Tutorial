@@ -1,0 +1,3 @@
+Hello, world.
+This is my first file working on git.
+Adding this text to check some features out.
